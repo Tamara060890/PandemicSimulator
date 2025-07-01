@@ -5,12 +5,12 @@ import java.util.List;
 import java.util.Objects;
 
 public class Patient {
-    String nationalRegistryNumber;
-    String fullName;
-    int age;
-    int temperature;
-    boolean unknownVirus;
-    boolean ensured;
+    private String nationalRegistryNumber;
+    private String fullName;
+    private int age;
+    private int temperature;
+    private boolean unknownVirus;
+    private boolean ensured;
 
     public Patient(String nationalRegistryNumber, String fullName, int age, int temperature, boolean unknownVirus, boolean ensured) {
         this.nationalRegistryNumber = nationalRegistryNumber;
@@ -21,6 +21,7 @@ public class Patient {
         this.ensured = ensured;
     }
 
+    // Getters en Setters
     public String getNationalRegistryNumber() {return nationalRegistryNumber;}
 
     public void setNationalRegistryNumber(String nationalRegistryNumber) {this.nationalRegistryNumber = nationalRegistryNumber;}
@@ -45,6 +46,7 @@ public class Patient {
 
     public void setEnsured(boolean ensured) {this.ensured = ensured;}
 
+    // Statische methode om een lijst va, voorbeeldpatiënten aan te maken
     public static List <Patient> getAllPatients(){
         List <Patient> allPatients = new ArrayList<>();
         Patient donaldPutin = new Patient("110201321", "Donald Putin", 90, 39, false, true);
