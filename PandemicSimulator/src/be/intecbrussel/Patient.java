@@ -103,7 +103,7 @@ public class Patient {
 
     @Override
     public String toString() {
-        return fullName + ": nationalRegistryNumber - " + nationalRegistryNumber + "; age " + age + "; temperatuur - "
+        return fullName + ": nationalRegistryNumber - " + nationalRegistryNumber + "; age " + age + "; temperature - "
                 + temperature + "; isEnsured " + ensured + "; unknownVirus " + unknownVirus;
     }
 }
