@@ -46,7 +46,7 @@ public class Patient {
 
     public void setEnsured(boolean ensured) {this.ensured = ensured;}
 
-    // Statische methode om een lijst va, voorbeeldpatiënten aan te maken
+    // Statische methode om een lijst van voorbeeldpatiënten aan te maken
     public static List <Patient> getAllPatients(){
         List <Patient> allPatients = new ArrayList<>();
         Patient donaldPutin = new Patient("110201321", "Donald Putin", 90, 39, false, true);
@@ -107,3 +107,4 @@ public class Patient {
                 + temperature + "; isEnsured " + ensured + "; unknownVirus " + unknownVirus;
     }
 }
+
